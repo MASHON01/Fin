@@ -1,0 +1,101 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href=" ../../../../static hrms/css/style.css ">
+    <style>
+        .body-bg{
+	background-image: url("{% static 'hrms/images/girr.webp' %}");
+	background-repeat: no-repeat;
+	background-size: 100% 105%;
+}
+.Ken{  
+   	position: absolute;
+    left: 2%;
+    top: 0;
+    z-index: 905;
+    margin-top: 0px;
+  } 
+  .log{
+  	position: absolute;
+    right: 2%;
+    top: 0;
+    z-index: 905;
+    margin-top: 0px;
+  }
+  .logo{
+  	width: 650px;
+    margin: 0 auto;
+    background: gray;
+    text-align: center;
+  }
+  .lin{
+  	text-align: center;
+  	margin-top: 70px;
+  	font-size: 23px;
+  	color: green;
+  }
+  a, a:link, a:visited, a:active, a:hover{
+  color: #228B22;
+  text-decoration: none;
+  background-color: #FFFFFF;
+}
+h2{
+	text-align: center;
+	font-weight: 900;
+	color: white;
+	background-color: green;
+}
+.desc{
+	color: white;
+	text-align: justify;
+	font-weight: 700;
+}
+.miss{
+	color: white;
+	text-align: center;
+	font-weight: 600;
+	font-size: 23px;
+}
+.viss{
+	color: white;
+	text-align: center;
+	font-weight: 600;
+	font-size: 23px;
+}
+.mar{
+	color: cyan;
+	font-size: 24px;
+	font-style: italic;
+	font-weight: 800;
+}
+.display-4{
+    text-align: center;
+    color: green;
+}
+        
+    </style>
+    <title>Home</title>
+</head>
+<body class="body-bg"><div class="Ken">
+    <img src="{% static 'hrms/images/sample.png' %}" height="150px" width="150px"></div>
+    <div><h1 class="logo">YOUR COMPANY ADVANCED STAFF MANAGEMENT SYSTEM</h1></div><div class="log"><img src="{% static 'hrms/images/sample.png' %}" height="150px" width="150px"></div>
+            <div class="lin">  <a href=" {% url 'hrms:login' %} "> ADMINSTRATOR</a> &emsp; &emsp; &emsp; &emsp;  &emsp;
+                <a href=" {% url 'hrms:recruitment' %} "> Looking for Vacancy?</a>
+            </div> 
+            <p><h2>OVERVIEW</h2></p><div class='desc'>
+                OVERVIEW OF YOUR COMPANY GOES HERE
+            </div>
+            <p><h2>MISSION</h2></p><div class='miss'>
+                MISSION TEXT
+            </div>
+            <p><h2>VISION</h2></p><div class='viss'>VISION TEXT</div>
+            <p class='mar'><marquee scrollamount="14"> MY MARQUEE MY MARQUEE MY MARQUEE MY MARQUEE MY MARQUEE</p></marquee>
+    <nav>
+        <p class="display-4 mx-auto bg-light">DEVELOPED AND MANAGED BY: PETER LEMASHON</p>
+    </nav>
+</body>
+</html>
